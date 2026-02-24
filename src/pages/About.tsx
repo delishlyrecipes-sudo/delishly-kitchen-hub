@@ -2,7 +2,7 @@ const About = () => (
   <div className="min-h-screen">
     <section className="bg-secondary/50 py-20">
       <div className="container mx-auto px-4 text-center">
-        <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">About Delishly</h1>
+        <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">About Delishly Recipes</h1>
         <p className="text-muted-foreground max-w-lg mx-auto">
           We believe great food brings people together.
         </p>
@@ -30,7 +30,7 @@ const About = () => (
           ))}
         </div>
         <p className="text-foreground/80 leading-relaxed">
-          Whether you're looking for a quick weeknight dinner, an impressive dessert for a party, or healthy meal prep ideas, we've got you covered. Welcome to Delishly — your kitchen's new best friend.
+          Whether you're looking for a quick weeknight dinner, an impressive dessert for a party, or healthy meal prep ideas, we've got you covered. Welcome to Delishly Recipes — your kitchen's new best friend.
         </p>
       </div>
     </section>
