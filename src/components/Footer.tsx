@@ -7,7 +7,7 @@ const Footer = () => (
         <div className="md:col-span-1">
           <Link to="/" className="flex items-center gap-2 mb-4">
             <span className="text-2xl">🍽️</span>
-            <span className="font-display text-xl font-bold text-background">Delishly</span>
+            <span className="font-display text-xl font-bold text-background">Delishly Recipes</span>
           </Link>
           <p className="text-sm leading-relaxed text-background/60">
             Discover easy, delicious, and tested recipes for every occasion. Made with love.
