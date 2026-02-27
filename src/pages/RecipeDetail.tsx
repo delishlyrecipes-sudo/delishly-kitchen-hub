@@ -95,19 +95,17 @@ const RecipeDetail = () => {
               ))}
             </div>
 
-            {/* Instructions */}
-            <div>
-              <h2 className="font-display text-2xl font-bold text-foreground mb-6">Instructions</h2>
-              <ol className="space-y-6">
-                {recipe.instructions.map((step, i) => (
-                  <li key={i} className="flex gap-4">
-                    <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
-                      {i + 1}
-                    </span>
-                    <p className="text-foreground/80 leading-relaxed pt-1">{step}</p>
-                  </li>
-                ))}
-              </ol>
+            {/* Article */}
+            <div className="prose prose-lg max-w-none">
+              {recipe.article.split("\n\n").map((block, i) => {
+                if (block.startsWith("### ")) {
+                  return <h3 key={i} className="font-display text-xl font-bold text-foreground mt-8 mb-3">{block.replace("### ", "")}</h3>;
+                }
+                if (block.startsWith("## ")) {
+                  return <h2 key={i} className="font-display text-2xl font-bold text-foreground mt-10 mb-4">{block.replace("## ", "")}</h2>;
+                }
+                return <p key={i} className="text-foreground/80 leading-relaxed mb-4">{block}</p>;
+              })}
             </div>
           </div>
 
