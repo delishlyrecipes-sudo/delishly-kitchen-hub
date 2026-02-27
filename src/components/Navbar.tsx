@@ -8,6 +8,7 @@ const Navbar = () => {
   const links = [
     { to: "/", label: "Home" },
     { to: "/recipes", label: "Recipes" },
+    { to: "/blog", label: "Blog" },
     { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
   ];
